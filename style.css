@@ -1,0 +1,25 @@
+body{
+    font-family: 'Karla', sans-serif;
+}
+container{
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: 100px 100px 100px 100px;
+}
+.item{
+    display:flex;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+}
+.item:nth-child(10){
+    background-color: aqua;
+    grid-column:3/5;
+}
+.item:nth-child(6){
+    background-color: aqua;
+    grid-column: 2/ 3;
+    grid-row: 2/4;
+}
